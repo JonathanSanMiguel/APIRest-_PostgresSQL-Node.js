@@ -49,7 +49,7 @@ const upDateUser = async(req, res) => {
     res.json('Usuario actualizado satisfactoriamente')
 };
 
-//Metodo para eliminar un usuario
+//Metodo para eliminar un usuario de la base de datos
 const deleteUser = async(req, res) => {
     const id = req.params.id;
     const response = await pool.query('DELETE FROM usuarios WHERE id=$1', [id]);
