@@ -25,7 +25,7 @@ const getOneUser = async(req, res) => {
 //Metodo para insertar un nuevo usuario
 const createUser = async(req, res) => {
     const { nombre, email } = req.body;
-    //Query para insertar los datos a la base de datos
+    //Query para insertar los datos
     const response = await pool.query(
         'INSERT INTO usuarios (nombre, email) VALUES ($1, $2)', [nombre, email]
     );
