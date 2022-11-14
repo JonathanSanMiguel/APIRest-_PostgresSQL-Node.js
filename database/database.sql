@@ -9,5 +9,5 @@ CREATE TABLE usuarios(
 INSERT INTO usuarios (nombre, email) VALUES 
 ('jose', 'exaple@emial.com'),
 ('jonathan', 'jona@email.com'),
-('nahomi', 'na@email.com'),
-('eliana', 'eli@email.com');
+('juan', 'ja@email.com'),
+('maria', 'ma@email.com');

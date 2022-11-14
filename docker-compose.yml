@@ -8,9 +8,13 @@ services:
       - postl
   postl:
     image: postgres:14.0
-    restart: always
     ports:
-      - "5432:5432"
+      - "5433:5433"
     environment:
-      - POSTGRES_USER=jona
+      - POSTGRES_USER=posgres
       - POSTGRES_PASSWORD=password
+    volumes:
+      - PGDATA:/var/lib/postgresql/data
+
+volumes:
+  PGDATA:

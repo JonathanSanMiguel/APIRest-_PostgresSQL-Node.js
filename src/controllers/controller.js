@@ -4,9 +4,11 @@ const { Pool } = require('pg');
 const pool = new Pool({
     host: 'localhost',
     user: 'postgres',
-    password: 'password',
+    password: 'winter707',
+    port: '5433',
     database: 'apirest'
 });
+
 
 //Metodo para obtener todos los usuarios
 const getAllUsers = async(req, res) => {

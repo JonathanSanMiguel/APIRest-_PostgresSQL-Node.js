@@ -5,7 +5,7 @@ services:
       context: .
       DockerFile: DockerFile.dev
     ports:
-      -"3001:3001"
+      - "3001:3001"
     links:
       - postl
     volumes:
