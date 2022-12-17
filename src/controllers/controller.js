@@ -23,7 +23,7 @@ const getOneUser = async(req, res) => {
     const response = await pool.query('SELECT * FROM usuarios WHERE id=$1', [id]);
     res.json(response.rows);
 };
-
+ 
 //Metodo para insertar un nuevo usuario
 const createUser = async(req, res) => {
     const { nombre, email } = req.body;
